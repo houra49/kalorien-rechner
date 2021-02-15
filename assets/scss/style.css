@@ -9,7 +9,7 @@ body {
 .sec {
   border: #9A8194 solid 1px;
   border-radius: 20px;
-  height: 80vh;
+  height: 90vh;
   width: 30vw;
   margin: 50px auto;
   background-color: #9A8194;
@@ -49,8 +49,28 @@ body {
   border: #c6a9a3 solid 1px;
 }
 
+.sec-table, .sec th, .sec td {
+  border: #520f47 solid 3px;
+  border-collapse: collapse;
+  background-color: #c6a9a3;
+}
+
+.sec-table {
+  width: 28vw;
+  margin: 0 3%;
+}
+
+.sec-table-thead {
+  width: 200px;
+  text-align: left;
+}
+
+.sec-table-td {
+  text-align: center;
+}
+
 .sec:hover {
-  -webkit-box-shadow: #b898b0 3px 3px 3px 3px;
-          box-shadow: #b898b0 3px 3px 3px 3px;
+  -webkit-box-shadow: #614f5c 3px 3px 3px 3px;
+          box-shadow: #614f5c 3px 3px 3px 3px;
 }
 /*# sourceMappingURL=style.css.map */

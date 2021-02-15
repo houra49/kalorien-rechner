@@ -12,39 +12,65 @@
 <body>
     <section class="sec">
         <h1 class="sec-head1">Kalorien Rechner</h1>
+        <!------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------Körpergröße-------------------------------------------------->
         <form action="">
             <label for="" class="sec-head3">Körpergröße</label>
-            <br><input type="number" name="" id="" class="sec-div">
+            <br><input type="number" name="" id="größe" class="sec-div" placeholder="0 cm">
             <br><label for="" class="sec-head3">Alter</label>
-            <br><input type="number" name="" id="" class="sec-div">
-            <br><label for="" class="sec-head3">Gewicht</label>
-            <br><input type="number" name="" id="" class="sec-div">
+            <br><input type="number" name="" id="alter" class="sec-div" placeholder="0">
+            <br><label for="" class=" sec-head3">Gewicht</label>
+            <br><input type="number" name="" id="gewicht" class="sec-div" placeholder="0 kg">
         </form>
+        <!------------------------------------------------------------------------------------------------------------->
+        <!--------------------------------------------------Körperbau-------------------------------------------------->
         <h3 class="sec-head3">Körperbau</h3>
-        <form action="">
-            <input type="radio" name="weiblich" id="" value="" checked>
+        <form action="" id="geschlecht">
+            <input type="radio" name="fine" id="frauen" value="">
             <label for="">Weiblicch</label>
-            <br><input type="radio" name="mänlich" id="" value="" checked>
+            <br><input type="radio" name="fine" id="männer" value="">
             <label for="">Männlich</label>
             <br><label for="" class="sec-head3">Arbeits-und Freizeitaktivität</label>
-            <select name="" id="" class="sec-div">
-                <option value="">Schlafen</option>
-                <option value="">Nur Sitzen oder Liegen</option>
-                <option value="">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der
+            <!------------------------------------------------------------------------------------------------------------->
+            <!---------------------------------------Arbeits-und Freizeitaktivität----------------------------------------->
+            <select name="aktivität" id="aktivität" class="sec-div">
+                <option value="schlafen">Schlafen</option>
+                <option value="sitzen">Nur Sitzen oder Liegen</option>
+                <option value="freizeit">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                    Aktivität
+                    in der
                     Freizeit, z.B. Büroarbeit</option>
-                <option value=""> Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende,
+                <option value="sitzendetätigkeit"> Sitzende Tätigkeit mit zeitweilig gehender oder stehender
+                    Tätigkeit, z.B.
+                    Studierende,
                     Fließbandarbeiter, Laboranten, Kraftfahrer
                 </option>
-                <option value="">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker,
+                <option value="stehendetätigkeit">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer,
+                    Kellner,
+                    Handwerker,
                     Mechaniker, Hausfrauen</option>
-                <option value="">Körperlich anstrengende berufliche Arbeit</option>
+                <option value="arbeit">Körperlich anstrengende berufliche Arbeit</option>
             </select>
         </form>
-        <button class="sec-button">Submit</button>
-        <table>
-            <tr></tr>
-            <tr></tr>
-            <tr></tr>
+        <button class="sec-button" onclick="kalorienRechner()">Submit</button>
+        <!------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------------table--------------------------------------------------->
+        <table class="sec-table">
+            <tr>
+                <th class="sec-table-thead"></th>
+                <th>Kcal</th>
+                <th>Kj</th>
+            </tr>
+            <tr>
+                <th class="sec-table-thead">Grundumsatz</th>
+                <td id="GrEr-kcal" class="sec-table-td"></td>
+                <td id="GrEr-kj" class="sec-table-td"></td>
+            </tr>
+            <tr>
+                <th class="sec-table-thead">Gesamtumsatz</th>
+                <td id="GeEr-kcal" class="sec-table-td"></td>
+                <td id="GeEr-kj" class="sec-table-td"></td>
+            </tr>
         </table>
     </section>
 
