@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+body{
+    margin:0;
+    height: 100vh;
+    background-color:#c6a9a3;
+}
+.sec{
+    border: #9A8194 solid 1px;
+    border-radius:20px;
+    height:80vh;
+    width: 30vw;
+    margin: 50px auto;
+    background-color:#9A8194 ;
+    font-family: 'Open Sans Condensed', sans-serif;
+    &-head1{
+        text-align:center;
+        font-family: 'Reggae One', cursive;
+        font-size: 1.8em;
+    }
+    &-head3{
+        padding-left: 3%;
+        font-size:1.2em;
+    }
+    &-div{
+        background-color:#c6a9a3;
+        width:27vw;
+        height:3vh;
+        margin: 3% 3%;
+        border-radius: 5px;
+        border: #9A8194 solid 1px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    &-button{
+        @extend .sec-div;
+        width: 5vw;
+        height: 5vh;
+        font-family: 'Reggae One', cursive;
+        margin-left: 77%;
+    }
+    &-button:hover{
+        background-color:#9A8194;
+        border: #c6a9a3 solid 1px;
+    }
+}
+.sec:hover{
+    box-shadow: #b898b0 3px 3px 3px 3px;
+}
